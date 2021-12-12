@@ -1,0 +1,9 @@
+.topbar-container {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 15px;
+
+    .topbar-button-container {
+        margin: 5px;
+    }
+}

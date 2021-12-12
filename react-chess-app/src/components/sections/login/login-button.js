@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import Button from '@material-ui/core/Button';
-import ModalDialog from '../sections/login/ModalDialog';
+import ModalDialog from './ModalDialog';
 
-const App = () => {
+const LoginButton = () => {
   // declare a new state variable for modal open
   const [open, setOpen] = useState(false);
 
@@ -17,7 +17,7 @@ const App = () => {
   };
 
   return (
-    <div className="signup-container">
+    <div className="login-container">
       <Button variant="contained" color="primary" onClick={handleOpen}>
         Login
       </Button>
@@ -25,5 +25,4 @@ const App = () => {
     </div>
   );
 };
-
-export default App;
+export default LoginButton;

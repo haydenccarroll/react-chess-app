@@ -3,7 +3,6 @@ import { Chessboard } from 'react-chessboard';
 import * as Chess from "chess.js"
 
 export function PlayRandomMoveEngine() {
-  console.log("This function is called")
   const [game, setGame] = useState(new Chess());
 
   function safeGameMutate(modify) {
@@ -37,12 +36,11 @@ export function PlayRandomMoveEngine() {
     return true;
   }
 
-  return <Chessboard position={game.fen()} onPieceDrop={onDrop} />;
+  return <Chessboard position={game.fen()} onPieceDrop={onDrop}/>;
 }
 
 
 export function PlayOnOwn() {
-    console.log("This function is called")
     const [game, setGame] = useState(new Chess());
   
     function safeGameMutate(modify) {
@@ -68,4 +66,4 @@ export function PlayOnOwn() {
     }
   
     return <Chessboard position={game.fen()} onPieceDrop={onDrop} />;
-  }
+}

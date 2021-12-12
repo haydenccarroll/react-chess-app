@@ -8,6 +8,7 @@ import {
 import Home from "./pages/home";
 import NoMatch from "./pages/no-match";
 import Signup from "./pages/signup"
+import Login from "./pages/login"
 
 const packageJson = require("../../package.json");
 
@@ -20,6 +21,7 @@ export default class App extends Component {
                         <Routes>
                             <Route exact path="/" element={<Home />}/>
                             <Route exact path="/sign-up" element={<Signup />}/>
+                            <Route exact path="/log-in" element={<Login />}/>
                             <Route exact path="*" element={ <NoMatch /> }/>
                         </Routes>
                     </div>
