@@ -1,0 +1,10 @@
+import React from "react";
+
+
+export default function Sidebar() {
+    return (
+        <div className="sidebar-container">
+            this is the sidebar
+        </div>
+    );
+}
