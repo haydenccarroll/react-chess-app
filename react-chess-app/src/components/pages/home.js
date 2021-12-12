@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import {PlayRandomMoveEngine} from "../sections/chessLogic"
+import Sidebar from "../sections/sidebar";
 import TopBar from "../sections/topbar/topbar"
 export default class Home extends Component {
     // constructor(props)
@@ -13,6 +14,9 @@ export default class Home extends Component {
                 <TopBar />
                 <div className="header">
                     <h1>Let's play some chess!</h1>
+                </div>
+                <div className="sidebar-container">
+                    <Sidebar />
                 </div>
                 <div className="chess-board-container">
                     <PlayRandomMoveEngine />
